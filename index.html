@@ -5,22 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/card.css">
   <script src="src/components/CardNews.js" defer></script>
+  <script src="/src/components/TituloDinamico.js" defer></script>
   <title>Portal de Noticías Galatica</title>
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div class="card_left">
-        <span>By Josival Silva</span>
-        <a href="#">Darth Vader contrata Devs</a>
-        <p>Dart Vader procura desenvolvedores que saibam trabalhar com componentes</p>
-      </div>
-      <div class="card_right">
-        <img class="img_darte" src="/assets/asset-Darte VaderI.png" alt="Darte Vader">
-      </div>
-    </div>
-  </div>
+  <card-news 
+    autor = "Josival Silva"
+    title = "Darth Vader contrata Devs"
+    content = "Dart Vader procura desenvolvedores que saibam trabalhar com componentes"
+    link-url = "www.google.com"
+    photo = "/assets/asset-Darte VaderI.png"
+  >
+  </card-news>
 
-  <card-news></card-news>
+  <card-news 
+    autor = "Josival Silva"
+    title = "Darth Vader contrata Devs"
+    content = "Dart Vader procura desenvolvedores que saibam trabalhar com componentes"
+    link-url = "www.google.com"
+    photo = "assets/asset-Darte Vader.png"
+  >
+  </card-news>
+
+  <card-news 
+    title = "Sem autor e com foto default"
+    content = "Dart Vader procura desenvolvedores que saibam trabalhar com componentes"
+    link-url = "www.google.com"
+  >
+  </card-news>
 </body>
 </html>
